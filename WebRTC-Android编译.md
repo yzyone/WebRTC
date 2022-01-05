@@ -1,6 +1,6 @@
 # WebRTC-Android编译 #
 
-## 一、利用docker的ubantu镜像安装 ##
+## 一、利用docker的ubuntu镜像安装 ##
 
 1、安装docker
 
@@ -8,7 +8,7 @@
 
 	docker run --rm -v <WebRTC Android/Linux 代码库的绝对路径>:/webrtc  -it piasy/webrtc-build
 
-上面的piasy/webrtc-build是docker上制作的一个ubantu镜像。
+上面的piasy/webrtc-build是docker上制作的一个ubuntu镜像。
 <WebRTC Android/Linux 代码库的绝对路径>这个括号里的目录是自己电脑上的真实目录，后面的:/webrtc意思是会docker上会有个webrtc目录映射到刚才那个真实目录。以后改真实目录的文件也会体现在docker上的，在docker上改动也会体现在电脑上，非常方便。
 
 首次执行会下载Docker镜像，需要等会儿。启动成功后，命令行会变成Docker镜像实例的命令行，这个命令行里已经配置好了WebRTC Android/Linux开发所需要的环境了。
